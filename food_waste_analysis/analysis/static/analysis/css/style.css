@@ -1,0 +1,67 @@
+/* Genel Ayarlar */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Banner Bölümü */
+.banner {
+    background-color: #2ecc71;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.banner p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Ana İçerik */
+.container {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.intro p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Butonlar */
+.buttons .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 1em;
+    text-decoration: none;
+    color: #fff;
+    background-color: #27ae60;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buttons .btn:hover {
+    background-color: #219150;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px 0;
+}
