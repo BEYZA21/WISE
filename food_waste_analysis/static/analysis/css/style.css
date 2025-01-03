@@ -1,0 +1,124 @@
+/* Genel Ayarlar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url("{% static 'images/food.jpg' %}") no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sağ üstteki butonlar */
+.top-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.539);
+}
+
+.top-nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.top-nav a:hover {
+    background: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+/* Ortadaki içerik */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+}
+
+.center-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0);
+}
+
+.center-content p {
+    font-size: 1.5em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Form Sayfası */
+.form-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    text-align: center;
+}
+
+.form-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0a0629;
+}
+
+/* Form Grupları */
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-container form .form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Label ve Input Stili */
+.form-container form label {
+    font-size: 1em;
+    color: black;
+    /* Label rengi */
+    margin-right: 10px;
+    width: 120px;
+    /* Genişlik */
+    text-align: right;
+    /* Sağ hizalama */
+}
+
+.form-container form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Buton Stili */
+.form-container form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-container form button:hover {
+    background: #004b9b;
+}

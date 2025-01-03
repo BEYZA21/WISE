@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'analysis/css/style.css' %}" />
+    <title>Welcome to Wise</title>
+  </head>
+  <body>
+    <!-- Sağ üstteki butonlar -->
+    <header>
+      <nav class="top-nav">
+        <a href="{% url 'login' %}">Login</a>
+        <a href="{% url 'register' %}">Signup</a>
+      </nav>
+    </header>
+
+    <!-- Ortadaki içerik -->
+    <main class="center-content">
+      <h1>Welcome to Wise</h1>
+      <p>Waste Intelligence Sustainable Eating</p>
+    </main>
+  </body>
+</html>

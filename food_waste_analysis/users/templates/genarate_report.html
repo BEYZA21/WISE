@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate Reports</title>
+  </head>
+  <body>
+    <h1>Generate Reports</h1>
+    <p>Create and download detailed food waste reports.</p>
+
+    <form method="POST">
+      {% csrf_token %}
+      <label for="report-type">Select report type:</label>
+      <select id="report-type" name="report_type" required>
+        <option value="daily">Daily Report</option>
+        <option value="weekly">Weekly Report</option>
+        <option value="monthly">Monthly Report</option></select
+      ><br /><br />
+      <button type="submit">Generate Report</button>
+    </form>
+  </body>
+</html>

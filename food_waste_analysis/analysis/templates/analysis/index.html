@@ -10,9 +10,10 @@
   <body>
     <header>
       <div class="banner">
-        <h1>Welcome to Food Waste Analysis</h1>
-
-        <p>Analyze and reduce food waste using AI-powered tools.</p>
+        <!-- Görsel Arka Plan İçin -->
+        <div class="banner-background"></div>
+        <h1>Welcome to WISE</h1>
+        <p>Waste Intelligence for Sustainable Eating</p>
       </div>
     </header>
 
@@ -27,16 +28,20 @@
         </div>
 
         <div class="buttons">
-          <a href="{% url 'graphs' %}" class="btn">View Graphs</a>
-          <a href="{% url 'upload' %}" class="btn">Upload Images</a>
-          <a href="{% url 'results' %}" class="btn">View Results</a>
-          <a href="{% url 'report' %}" class="btn">Generate Report</a>
+          <div class="upload">
+            <a href="{% url 'upload' %}" class="btn">Upload Images</a>
+          </div>
+          <div class="other-buttons">
+            <a href="{% url 'graphs' %}" class="btn">View Graphs</a>
+            <a href="{% url 'results' %}" class="btn">View Results</a>
+            <a href="{% url 'report' %}" class="btn">Generate Report</a>
+          </div>
         </div>
       </div>
     </main>
 
     <footer>
-      <p>© 2024 Food Waste Analysis. All Rights Reserved.</p>
+      <p>© 2024 WISE by BYN. All Rights Reserved.</p>
     </footer>
   </body>
 </html>
